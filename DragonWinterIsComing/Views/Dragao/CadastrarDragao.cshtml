@@ -1,0 +1,41 @@
+﻿
+@model Dragao
+    <form asp-action="Cadastrar" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group" id="Nome">
+            <label asp-for="Nome"></label>
+            <input placeholder="Nome do Dradão" type="text" class="form-control" asp-for="Nome" />
+            <span asp-validation-for="Nome" class="text-danger"></span>
+        </div>
+        <div class="form-group" id="Raca">
+            <label asp-for="Raca"></label>
+            <input type="text" placeholder="Raça do Dragão" class="form-control" asp-for="Raca" />
+            <span asp-validation-for="Raca" class="text-danger"></span>
+        </div>
+        <div class="form-group" id="Cor">
+            <label asp-for="Cor"></label>
+            <input type="text" placeholder="Cor do Dragão" class="form-control" asp-for="Cor" />
+            <span asp-validation-for="Cor" class="text-danger"></span>
+        </div>
+        <div class="form-group" id="Dieta">
+            <label asp-for="Dieta"></label>
+            <input type="text" placeholder="Dieta do Dragão" class="form-control" asp-for="Dieta" />
+            <span asp-validation-for="Dieta" class="text-danger"></span>
+        </div>
+        <div class="form-group" id="Habitat">
+            <label asp-for="Habitat"></label>
+            <input type="text" placeholder="Habitat do Dragão" class="form-control" asp-for="Habitat" />
+            <span asp-validation-for="Habitat" class="text-danger"></span>
+        </div>
+        <div class="form-group" id="Origem">
+            <label asp-for="Origem"></label>
+            <input type="text" placeholder="Origem do Dragão" class="form-control" asp-for="Origem" />
+            <span asp-validation-for="Origem" class="text-danger"></span>
+        </div>
+        <div class="form-group" id="Idade">
+            <label asp-for="Idade"></label>
+            <input type="text" placeholder="Idade do Dragão" class="form-control" asp-for="Idade" />
+            <span asp-validation-for="Idade" class="text-danger"></span>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Cadastrar" />
+    </form>

@@ -1,0 +1,47 @@
+﻿@model List<Dragao>
+@{
+    DateTime data = ViewBag.DataHora;
+}
+<h2>Gerenciamento de Dragões</h2>
+<a asp-action="CadastrarDragao" class="btn btn-primary">Cadastrar Dragão</a>
+<table class="table table-hover table-striped" style="margin-top:15px;margin-bottom:15px">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Raça</th>
+            <th>Cor</th>
+            <th>Dieta</th>
+            <th>Habitat</th>
+            <th>Origem</th>
+            <th>Idade</th>
+            <th>Criado em</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Dragao item in Model)
+        {
+        <tr>
+            <td>@item.Nome</td>
+            <td>@item.Raca</td>
+            <td>@item.Cor</td>
+            <td>@item.Dieta</td>
+            <td>@item.Habitat</td>
+            <td>@item.Origem</td>
+            <td>@item.Idade</td>
+            <td>@item.CriadoEm</td>
+            <td>
+                <a asp-action="ExcluirDragao" asp-route-id="@item.DragaoId" class="btn btn-danger">Excluir</a>
+            </td>
+            <td>
+                <a asp-action="AlterarDadosDragao" asp-route-id="@item.DragaoId" class="btn btn-warning">Alterar </a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+<p>
+    <b>Dados atualizados em: </b> @data
+</p>
+
