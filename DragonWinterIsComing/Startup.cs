@@ -32,6 +32,7 @@ namespace DragonWinterIsComing
 
             //Criar ID dos DAOs
             services.AddScoped<DragaoDAO>();
+            services.AddScoped<PessoaDAO>();
 
             //Criar ID de contexto
             services.AddDbContext<Context>
@@ -60,7 +61,7 @@ namespace DragonWinterIsComing
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Dragao}/{action=Index}/{Id?}");
+                    template: "{controller=Pessoas}/{action=Login}/{Id?}");
             });
         }
     }

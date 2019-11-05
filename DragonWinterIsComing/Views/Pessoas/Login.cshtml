@@ -1,0 +1,23 @@
+﻿@model Pessoa
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+<form asp-action="">
+    <fieldset>
+        <legend>Login do usuário</legend>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Usuário</label>
+                <input type="text" class="form-control" asp-for="Nome" />
+            </div>
+            <div class="form-group">
+                <label>Senha</label>
+                <input type="password" class="form-control" asp-for="Senha" />
+            </div>
+            <input type="submit" class="form-control" value="Entrar" />
+            <a href="CadastrarPessoa.cshtml">Não possui cadastro ainda?</a>
+        </div>
+    </fieldset>    
+</form>
+
+

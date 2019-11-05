@@ -1,0 +1,55 @@
+﻿@model List<Viagem>
+@{
+    DateTime data = ViewBag.DataHora;
+}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Meus Dados</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Minha nave</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Dashboard Pilotos</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<table class="table-light">
+    <thead>
+        <tr>
+            <th>Data</th>
+            <th>Cliente</th>
+            <th>Planeta origem</th>
+            <th>Planeta destino</th>
+            <th>Status</th>
+            <th>Nota</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Viagem item in Model)
+        {
+        <tr>
+            <td>@item.Data</td>
+            <td>@item.Usuario</td>
+            <td>@item.LocOrigem</td>
+            <td>@item.LocDestino</td>
+            <td>@item.Status</td>
+            <td>@item.Nota</td>
+        </tr>
+        }
+    </tbody>
+
+</table>
+

@@ -1,0 +1,47 @@
+﻿@*@model Pessoa
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Cpf)</th>
+            <th>Senha</th>
+            <th>Corfirmar senha </th>
+            <th>Email</th>
+            <th>Tipo</th>
+            <th>Telefone</th>
+            <th>Casa</th>
+            <th>Cidade </th>
+            <th>Reino</th>
+            <th>Criado em</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Pessoa item in Model)
+        {
+            <tr>
+                <td>item.Nome</td>
+                <td>item.Cpf</td>
+                <td>item.Senha</td>
+                <td>item.ComparacaoSenha</td>
+                <td>item.Email</td>
+                <td>item.Tipo</td>
+                <td>item.Telefone </td>
+                <td>item.Casa </td>
+                <td>.Cidade</td>
+                <td>item.Reino</td>
+                <td>item.CriadoEm </td>
+
+            </tr>
+        }
+    </tbody>
+</table>*@

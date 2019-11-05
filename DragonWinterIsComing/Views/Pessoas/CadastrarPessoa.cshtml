@@ -1,0 +1,52 @@
+﻿@model Pessoa
+<form asp-action="Cadastrar" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group" id="Nome">
+        <label asp-for="Nome"></label>
+        <input placeholder="Nome" type="text" class="form-control" asp-for="Nome" />
+        <span asp-validation-for="Nome" class="text-danger"></span>
+    </div>
+    <div class="form-group" id="Senha">
+        <label asp-for="Senha"></label>
+        <input type="text" placeholder="Senha" class="form-control" asp-for="Senha" />
+        <span asp-validation-for="Senha" class="text-danger"></span>
+    </div>
+    <div class="form-group" id="ComparacaoSenha">
+        <label asp-for="ComparacaoSenha"></label>
+        <input type="text" placeholder="Confirme sua senha" class="form-control" asp-for="ComparacaoSenha" />
+        <span asp-validation-for="ComparacaoSenha" class="text-danger"></span>
+    </div>
+    <div class="form-group" id="Email">
+        <label asp-for="Email"></label>
+        <input type="text" placeholder="E-mail" class="form-control" asp-for="Email" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group" id="Telefone">
+        <label asp-for="Telefone"></label>
+        <input type="text" placeholder=Telefone class="form-control" asp-for="Telefone" />
+        <span asp-validation-for="Telefone" class="text-danger"></span>
+    </div>
+    <div class="form-group" id="Idade">
+        <label asp-for="Tipo"></label>
+        <input type="text" placeholder="Idade do Dragão" class="form-control" asp-for="Tipo" />
+        <span asp-validation-for="Tipo" class="text-danger"></span>
+    </div>
+    <div class="form-group" id="Casa">
+        <label asp-for="Casa"></label>
+        <input type="text" placeholder=Casa class="form-control" asp-for="Casa" />
+        <span asp-validation-for="Casa" class="text-danger"></span>
+    </div>
+    <div class="form-group" id="Cidade">
+        <label asp-for="Cidade"></label>
+        <input type="text" placeholder=Casa class="form-control" asp-for="Cidade" />
+        <span asp-validation-for="Cidade" class="text-danger"></span>
+    </div>
+    <div class="form-group" id="Reino">
+        <label asp-for="Reino"></label>
+        <input type="text" placeholder=Reino class="form-control" asp-for="Reino" />
+        <span asp-validation-for="Reino" class="text-danger"></span>
+    </div>
+
+
+    <input type="submit" class="btn btn-primary" value="Cadastrar" />
+</form>
