@@ -4,10 +4,22 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DragonWinterIsComing.Migrations
 {
-    public partial class NewDB : Migration
+    public partial class CriarBancoAddCompararSenha : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Categoria",
+                columns: table => new
+                {
+                    CategoriaId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Categoria", x => x.CategoriaId);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Dragoes",
                 columns: table => new
@@ -37,6 +49,7 @@ namespace DragonWinterIsComing.Migrations
                     Nome = table.Column<string>(nullable: true),
                     Cpf = table.Column<string>(nullable: true),
                     Senha = table.Column<string>(nullable: true),
+                    ComparacaoSenha = table.Column<string>(nullable: true),
                     Email = table.Column<string>(nullable: true),
                     Tipo = table.Column<int>(nullable: false),
                     Telefone = table.Column<string>(nullable: true),
@@ -122,6 +135,9 @@ namespace DragonWinterIsComing.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Categoria");
+
             migrationBuilder.DropTable(
                 name: "Viagem");
 

@@ -67,6 +67,8 @@ namespace DragonWinterIsComing.Migrations
 
                     b.Property<string>("Cidade");
 
+                    b.Property<string>("ComparacaoSenha");
+
                     b.Property<string>("Cpf");
 
                     b.Property<DateTime>("CriadoEm");

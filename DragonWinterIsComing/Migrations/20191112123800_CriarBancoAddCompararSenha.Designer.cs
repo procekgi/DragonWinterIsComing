@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DragonWinterIsComing.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20191029122248_NewCategoria")]
-    partial class NewCategoria
+    [Migration("20191112123800_CriarBancoAddCompararSenha")]
+    partial class CriarBancoAddCompararSenha
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -68,6 +68,8 @@ namespace DragonWinterIsComing.Migrations
                     b.Property<string>("Casa");
 
                     b.Property<string>("Cidade");
+
+                    b.Property<string>("ComparacaoSenha");
 
                     b.Property<string>("Cpf");
 

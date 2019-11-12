@@ -23,7 +23,7 @@ namespace DragonWinterIsComing.Controllers
         {
             return View();
         }
-        
+
         //public bool Login()
         //{
 
@@ -33,15 +33,34 @@ namespace DragonWinterIsComing.Controllers
         {
             return View();
         }
+        public IActionResult CadastroPiloto()
+        {
+            return View();
+        }
+
+        public IActionResult PaginaPiloto(Pessoa p)
+        {
+            return View();
+        }
+
+        public IActionResult PaginaUsuario(Pessoa p)
+        {
+            return View();
+        }
 
         [HttpPost]
         public IActionResult Cadastrar(Pessoa p)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return RedirectToAction("Index");
+                if (_pessoaDAO.Cadastrar(p))
+                {                   
+                    return RedirectToAction("PaginaUsuario");
+
+                }
+
             }
-            ModelState.AddModelError("" ,"Hoo man, já existe esse cadastro!");
+            ModelState.AddModelError("", "Hoo man, já existe esse cadastro!");
             return View(p);
         }
 
@@ -49,11 +68,13 @@ namespace DragonWinterIsComing.Controllers
         {
             ViewBag.DataHora = DateTime.Now;
             return View(_pessoaDAO.ListarPessoas());
-            
+
         }
 
-
-        
+        public IActionResult Alterar(int id)
+        {
+            return View(_pessoaDAO.BuscarPorPessoaId(id));
+        }
 
     }
 }

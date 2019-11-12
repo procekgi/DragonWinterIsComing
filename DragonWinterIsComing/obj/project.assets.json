@@ -12663,11 +12663,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aluno\\Downloads\\DragonWinterIsComing-master_3110\\DragonWinterIsComing-master\\DragonWinterIsComing\\DragonWinterIsComing.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno\\Source\\Repos\\DragonWinterIsComing2\\DragonWinterIsComing\\DragonWinterIsComing.csproj",
       "projectName": "DragonWinterIsComing",
-      "projectPath": "C:\\Users\\Aluno\\Downloads\\DragonWinterIsComing-master_3110\\DragonWinterIsComing-master\\DragonWinterIsComing\\DragonWinterIsComing.csproj",
+      "projectPath": "C:\\Users\\Aluno\\Source\\Repos\\DragonWinterIsComing2\\DragonWinterIsComing\\DragonWinterIsComing.csproj",
       "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aluno\\Downloads\\DragonWinterIsComing-master_3110\\DragonWinterIsComing-master\\DragonWinterIsComing\\obj\\",
+      "outputPath": "C:\\Users\\Aluno\\Source\\Repos\\DragonWinterIsComing2\\DragonWinterIsComing\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

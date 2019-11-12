@@ -33,6 +33,7 @@ namespace DragonWinterIsComing
             //Criar ID dos DAOs
             services.AddScoped<DragaoDAO>();
             services.AddScoped<PessoaDAO>();
+            services.AddScoped<UsuarioDAO>();
 
             //Criar ID de contexto
             services.AddDbContext<Context>
