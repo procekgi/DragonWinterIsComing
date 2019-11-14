@@ -59,7 +59,7 @@ using DragonWinterIsComing.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(25, 171, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "27d6a252fbce49299f9a8dfed43a3150", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e991e84d9ea84707b3532e13a3822f78", async() => {
                 BeginContext(31, 72, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>");
                 EndContext();
@@ -74,7 +74,7 @@ using DragonWinterIsComing.Models;
                 WriteLiteral("</title>\r\n    ");
                 EndContext();
                 BeginContext(131, 56, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2a94d857ab4048da9fc60b2f78a7d594", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "594af0a3952b459f9a995c0850259689", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -108,7 +108,7 @@ using DragonWinterIsComing.Models;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(200, 619, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cb00e4c2b6ac45fb9f03c941f3f4e090", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a3cfe3d75ae4141ad9a07b81f919c14", async() => {
                 BeginContext(206, 2, true);
                 WriteLiteral("\r\n");
                 EndContext();
@@ -116,7 +116,7 @@ using DragonWinterIsComing.Models;
                 WriteLiteral("    <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">\r\n        <a class=\"navbar-brand\" href=\"#\">Dragon Winterls Coming</a>\r\n        ");
                 EndContext();
                 BeginContext(381, 70, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "43788a2c852c465fb95102e425e245a2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6cb14f73c0694db5a1a58958a9d39bb8", async() => {
                     BeginContext(441, 6, true);
                     WriteLiteral("Entrar");
                     EndContext();

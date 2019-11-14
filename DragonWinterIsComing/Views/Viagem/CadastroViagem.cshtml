@@ -1,0 +1,21 @@
+﻿@model Viagem
+<form asp-action="Cadastrar" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group" id="Nome">
+        <label asp-for="LocOrigem"></label>
+        <input type="text" class="form-control" asp-for="LocOrigem" />
+        <span asp-validation-for="LocOrigem" class="text-danger"></span>
+    </div>
+    <div class="form-group" id="Cpf">
+        <label asp-for="LocDestino"></label>
+        <input type="text" class="form-control" asp-for="LocDestino" />
+        <span asp-validation-for="LocDestino" class="text-danger"></span>
+    </div>
+    <div class="form-group" id="Senha">
+        <label asp-for="Data"></label>
+        <input type="text" class="form-control" asp-for="Data" />
+        <span asp-validation-for="Data" class="text-danger"></span>
+    </div>
+   
+    <input type="submit" class="btn btn-primary" value="Cadastrar" />
+</form>

@@ -203,7 +203,6 @@ C:\Users\Aluno\Source\Repos\DragonWinterIsComing2\DragonWinterIsComing\obj\Debug
 C:\Users\Aluno\Source\Repos\DragonWinterIsComing2\DragonWinterIsComing\obj\Debug\netcoreapp2.1\Razor\Views\Dragao\AlterarDadosDragao.g.cshtml.cs
 C:\Users\Aluno\Source\Repos\DragonWinterIsComing2\DragonWinterIsComing\obj\Debug\netcoreapp2.1\Razor\Views\Dragao\CadastrarDragao.g.cshtml.cs
 C:\Users\Aluno\Source\Repos\DragonWinterIsComing2\DragonWinterIsComing\obj\Debug\netcoreapp2.1\Razor\Views\Dragao\Index.g.cshtml.cs
-C:\Users\Aluno\Source\Repos\DragonWinterIsComing2\DragonWinterIsComing\obj\Debug\netcoreapp2.1\Razor\Views\Pessoas\CadastrarPessoa.g.cshtml.cs
 C:\Users\Aluno\Source\Repos\DragonWinterIsComing2\DragonWinterIsComing\obj\Debug\netcoreapp2.1\Razor\Views\Pessoas\Index.g.cshtml.cs
 C:\Users\Aluno\Source\Repos\DragonWinterIsComing2\DragonWinterIsComing\obj\Debug\netcoreapp2.1\Razor\Views\Pessoas\Login.g.cshtml.cs
 C:\Users\Aluno\Source\Repos\DragonWinterIsComing2\DragonWinterIsComing\obj\Debug\netcoreapp2.1\Razor\Views\Pessoas\PaginaPiloto.g.cshtml.cs
@@ -219,3 +218,6 @@ C:\Users\Aluno\Source\Repos\DragonWinterIsComing2\DragonWinterIsComing\obj\Debug
 C:\Users\Aluno\Source\Repos\DragonWinterIsComing2\DragonWinterIsComing\obj\Debug\netcoreapp2.1\Razor\Views\Pessoas\CadastroPiloto.g.cshtml.cs
 C:\Users\Aluno\Source\Repos\DragonWinterIsComing2\DragonWinterIsComing\obj\Debug\netcoreapp2.1\Razor\Views\Pessoas\PaginaUsuario.g.cshtml.cs
 C:\Users\Aluno\Source\Repos\DragonWinterIsComing2\DragonWinterIsComing\obj\Debug\netcoreapp2.1\Razor\Views\Pessoas\AlterarUsuario.g.cshtml.cs
+C:\Users\Aluno\Source\Repos\DragonWinterIsComing2\DragonWinterIsComing\obj\Debug\netcoreapp2.1\Razor\Views\Viagem\AvaliacaoViagem.g.cshtml.cs
+C:\Users\Aluno\Source\Repos\DragonWinterIsComing2\DragonWinterIsComing\obj\Debug\netcoreapp2.1\Razor\Views\Pessoas\CadastroUsuario.g.cshtml.cs
+C:\Users\Aluno\Source\Repos\DragonWinterIsComing2\DragonWinterIsComing\obj\Debug\netcoreapp2.1\Razor\Views\Viagem\CadastroViagem.g.cshtml.cs

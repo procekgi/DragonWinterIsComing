@@ -1,0 +1,19 @@
+﻿@model Viagem
+<h2>AvaliacaoViagem</h2>
+<form asp-action="AdicionarNota" method="post">
+<div>
+    <fieldset>
+        <legend>Avalie o piloto</legend>
+        <h2>Quantos dragões ele merece?</h2>
+        <div class="form-inline">
+            <input type="radio" value="1" asp-for="Nota" />
+            <input type="radio" value="2" asp-for="Nota" />
+            <input type="radio" value="3" asp-for="Nota" />
+            <input type="radio" value="4" asp-for="Nota" />
+            <input type="radio" value="5" asp-for="Nota" />
+        </div>
+        <input type="submit" value="Enviar" />
+    </fieldset>
+</div>
+</form>
+

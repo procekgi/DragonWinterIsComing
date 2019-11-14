@@ -65,7 +65,7 @@ using DragonWinterIsComing.Models;
             WriteLiteral("<h2>Gerenciamento de Dragões</h2>\r\n");
             EndContext();
             BeginContext(102, 76, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "73d331d1df54487a94060f63eef4bf84", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1233c3d5999f4900b9968629ec75920e", async() => {
                 BeginContext(158, 16, true);
                 WriteLiteral("Cadastrar Dragão");
                 EndContext();
@@ -194,7 +194,7 @@ using DragonWinterIsComing.Models;
             WriteLiteral("</td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(988, 94, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3ca51cc82e38450490b5efddc6f81355", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "793739cf052044c6aeec7155374c7949", async() => {
                 BeginContext(1071, 7, true);
                 WriteLiteral("Excluir");
                 EndContext();
@@ -230,7 +230,7 @@ using DragonWinterIsComing.Models;
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(1137, 101, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "02217b139728491aa2d43f885ab6fa7d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4f9944d43ed8448288ad433873dff573", async() => {
                 BeginContext(1226, 8, true);
                 WriteLiteral("Alterar ");
                 EndContext();

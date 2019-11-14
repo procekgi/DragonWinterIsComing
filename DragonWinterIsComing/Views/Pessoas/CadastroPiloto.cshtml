@@ -1,5 +1,5 @@
 ﻿
-@model Pessoa
+@model Piloto
 
 <form asp-action="Cadastrar" method="post">
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -47,6 +47,11 @@
         <label asp-for="ComparacaoSenha"></label>
         <input type="text" placeholder="Confirme sua senha" class="form-control" asp-for="ComparacaoSenha" />
         <span asp-validation-for="ComparacaoSenha" class="text-danger"></span>
+    </div>
+    <div class="form-group" id="Cdh">
+        <label asp-for="Cdh"></label>
+        <input type="text" placeholder="CDH" class="form-control" asp-for="Cdh" />
+        <span asp-validation-for="Cdh" class="text-danger"></span>
     </div>
 
 

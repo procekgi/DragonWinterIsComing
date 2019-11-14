@@ -42,6 +42,16 @@ namespace DragonWinterIsComing.DAL
             return _context.Pessoas.ToList();
         }
 
+        public List<Usuario> ListarUsuarios()
+        {
+            return _context.Pessoas.OfType<Usuario>().ToList();
+        }
+
+        public List<Piloto> ListarPilotos()
+        {
+            return _context.Pessoas.OfType<Piloto>().ToList();
+        }
+
         //Alterar Dados do Pessoa
         public void AlterarDadosPessoa(Pessoa p)
         {
