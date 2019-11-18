@@ -36,6 +36,14 @@ namespace DragonWinterIsComing.DAL
             return _context.Pessoas.Find(Id);
         }
 
+        public Piloto BuscarPilotoPorNome(Piloto p)
+        {
+            return _context.Pessoas.OfType<Piloto>().FirstOrDefault(x => x.Nome.Equals(p.Nome));
+        }
+        public Usuario BuscarUsuarioPorNome(Usuario u)
+        {
+            return _context.Pessoas.OfType<Usuario>().FirstOrDefault(x => x.Nome.Equals(u.Nome));
+        }
         //Lista de Pessoas
         public List<Pessoa> ListarPessoas()
         {

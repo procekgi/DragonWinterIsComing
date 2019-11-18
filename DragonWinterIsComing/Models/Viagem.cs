@@ -21,5 +21,7 @@ namespace DragonWinterIsComing.Models
         public double Nota { get; set; }
         public Dragao Dragao { get; set; }
         public string Status { get; set; }
+        public bool PossuiBagagem { get; set; }
+
     }
 }

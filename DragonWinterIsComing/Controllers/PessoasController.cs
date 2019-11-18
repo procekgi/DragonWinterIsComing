@@ -13,10 +13,12 @@ namespace DragonWinterIsComing.Controllers
     public class PessoasController : Controller
     {
         private readonly PessoaDAO _pessoaDAO;
+        private readonly ViagemDAO _viagemDAO;
 
-        public PessoasController(PessoaDAO pessoaDAO)
+        public PessoasController(PessoaDAO pessoaDAO, ViagemDAO viagemDAO)
         {
             _pessoaDAO = pessoaDAO;
+            _viagemDAO = viagemDAO;
         }
 
         public IActionResult Login()
@@ -24,6 +26,10 @@ namespace DragonWinterIsComing.Controllers
             return View();
         }
 
+        public IActionResult EntrarUsuario()
+        {
+            return RedirectToAction("PaginaUsuario");
+        }
         //public bool Login()
         //{
 
@@ -43,9 +49,9 @@ namespace DragonWinterIsComing.Controllers
             return View();
         }
 
-        public IActionResult PaginaUsuario(Usuario u)
-        {
-            return View();
+        public IActionResult PaginaUsuario(Usuario u, Viagem v)
+        {           
+           return View(_viagemDAO.ListarViagens(v));                       
         }
 
         [HttpPost]
@@ -94,6 +100,8 @@ namespace DragonWinterIsComing.Controllers
         {
             return View(_pessoaDAO.BuscarPorPessoaId(id));
         }
+
+       
 
     }
 }

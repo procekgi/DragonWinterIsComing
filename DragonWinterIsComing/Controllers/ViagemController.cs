@@ -35,5 +35,23 @@ namespace DragonWinterIsComing.Controllers
 
             return View();
         }
+
+        public IActionResult CadastroViagem()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult CadastrarViagem(Viagem v)
+        {
+            ViewBag.DataHora = DateTime.Now;
+            if (ModelState.IsValid)
+            {
+                _viagemDAO.CadastrarViagem(v);
+            }
+                
+                return View();
+            
+        }
     }
 }

@@ -21,11 +21,17 @@ namespace DragonWinterIsComing.DAL
             _context.SaveChanges();
 
         }
+
         public void CadastrarViagem(Viagem v)
         {
+            
             _context.Viagens.Add(v);
             _context.SaveChanges();
         }
 
+        public List<Viagem> ListarViagens(Viagem v)
+        {
+            return _context.Viagens.ToList();
+        }
     }
 }
