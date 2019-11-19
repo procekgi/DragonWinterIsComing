@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DragonWinterIsComing.Models;
 using DragonWinterIsComing.DAL;
+using System.Net;
+using Newtonsoft.Json;
 
 namespace DragonWinterIsComing.Controllers
 {
@@ -101,7 +103,22 @@ namespace DragonWinterIsComing.Controllers
             return View(_pessoaDAO.BuscarPorPessoaId(id));
         }
 
-       
+        //[HttpPost]
+        //public IActionResult BuscarPessoa(Pessoa p)
+        //{
+        //    try
+        //    {
+        //        string url = "https://anapioficeandfire.com/" + p.Genero + "/json/";
+        //        WebClient client = new WebClient();
+        //        p.Genero = JsonConvert.DeserializeObject<Pessoa>(client.DownloadString(url));
+        //        TempData["Pessoa"] = JsonConvert.SerializeObject(p);
+        //    }
+        //    catch (Exception)
+        //    {
+        //        //Mostrar uma mensagem para o usuário
+        //    }
+        //    return RedirectToAction("Cadastrar");
+        //}
 
     }
 }

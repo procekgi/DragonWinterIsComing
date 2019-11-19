@@ -1,4 +1,8 @@
 ﻿@model Usuario
+ public string Genero { get; set; }
+        public string Cultura { get; set; }
+        public string Nascimento { get; set; }
+        public string Apelido { get; set; }
 
 <form asp-action="Cadastrar" method="post">
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -7,10 +11,25 @@
         <input placeholder="Nome" type="text" class="form-control" asp-for="Nome" />
         <span asp-validation-for="Nome" class="text-danger"></span>
     </div>
-    <div class="form-group" id="Cpf">
-        <label asp-for="Cpf"></label>
-        <input type="text" placeholder="Cpf" class="form-control" asp-for="Cpf" />
-        <span asp-validation-for="Cpf" class="text-danger"></span>
+    <div class="form-group" id="Genero">
+        <label asp-for="Genero"></label>
+        <input  type="text" class="form-control" asp-for="Genero" />
+        <span asp-validation-for="Genero" class="text-danger"></span>
+    </div>
+    <div class="form-group" id="Cultura">
+        <label asp-for="Cultura"></label>
+        <input  type="text" class="form-control" asp-for="Cultura" />
+        <span asp-validation-for="Cultura" class="text-danger"></span>
+    </div>
+    <div class="form-group" id="Nascimento">
+        <label asp-for="Nascimento"></label>
+        <input type="text" class="form-control" asp-for="Nascimento" />
+        <span asp-validation-for="Nascimento" class="text-danger"></span>
+    </div>
+    <div class="form-group" id="Apelido">
+        <label asp-for="Apelido"></label>
+        <input type="text" class="form-control" asp-for="Apelido" />
+        <span asp-validation-for="Apelido" class="text-danger"></span>
     </div>
     <div class="form-group" id="Senha">
         <label asp-for="Senha"></label>
@@ -31,7 +50,7 @@
         <label asp-for="Telefone"></label>
         <input type="text" placeholder=Telefone class="form-control" asp-for="Telefone" />
         <span asp-validation-for="Telefone" class="text-danger"></span>
-    </div>   
+    </div>
     <div class="form-group" id="Casa">
         <label asp-for="Casa"></label>
         <input type="text" placeholder=Casa class="form-control" asp-for="Casa" />
@@ -42,10 +61,6 @@
         <input type="text" placeholder=Casa class="form-control" asp-for="Cidade" />
         <span asp-validation-for="Cidade" class="text-danger"></span>
     </div>
-    <div class="form-group" id="Reino">
-        <label asp-for="Reino"></label>
-        <input type="text" placeholder=Reino class="form-control" asp-for="Reino" />
-        <span asp-validation-for="Reino" class="text-danger"></span>
-    </div>
+
     <input type="submit" class="btn btn-primary" value="Cadastrar" />
 </form>

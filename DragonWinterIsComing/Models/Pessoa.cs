@@ -19,10 +19,11 @@ namespace DragonWinterIsComing.Models
         [Required(ErrorMessage = "Campo obrigatório")]
         public string Nome { get; set; }
 
-        [Required(ErrorMessage = "Campo obrigatório")]
-        public string Cpf { get; set; }
-
-
+        public string Genero { get; set; }
+        public string Cultura { get; set; }
+        public string Nascimento { get; set; }
+        public string Apelido { get; set; }
+           
         [Required(ErrorMessage = "Campo obrigatório")]
         public string Senha { get; set; }
 
@@ -32,8 +33,7 @@ namespace DragonWinterIsComing.Models
 
         [Required(ErrorMessage = "Campo obrigatório")]
         public string Email { get; set; }
-
-
+        
         public int Tipo { get; set; }
 
         [Required(ErrorMessage = "Campo obrigatório")]
@@ -44,11 +44,7 @@ namespace DragonWinterIsComing.Models
 
         [Required(ErrorMessage = "Campo obrigatório")]
         public string Cidade { get; set; }
-
-
-        [Required(ErrorMessage = "Campo obrigatório")]
-        public string Reino { get; set; }
-
+                     
 
         public DateTime CriadoEm { get; set; }
     }
